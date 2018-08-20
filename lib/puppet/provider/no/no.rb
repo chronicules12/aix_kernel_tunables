@@ -150,7 +150,33 @@ Puppet::Type.type(:no).provide :aix do
 
   def tcp_tcpsecure=(value)
     system('no -p -o tcp_tcpsecure='"#{resource[:tcp_tcpsecure]}")
-  end      
+  end
+
+  ##
+	##	newproperty(:tcp_ephemeral_low)
+	##
+	def tcp_ephemeral_low
+    if getvalue("tcp_ephemeral_low") == resource[:tcp_ephemeral_low]
+      return resource[:tcp_ephemeral_low]
+    end
+  end
+
+  def tcp_ephemeral_low=(value)
+    system('no -p -o tcp_ephemeral_low='"#{resource[:tcp_ephemeral_low]}")
+  end  
+  
+	##
+	##	newproperty(:tcp_ephemeral_high)
+	##
+	def tcp_ephemeral_high
+    if getvalue("tcp_ephemeral_high") == resource[:tcp_ephemeral_high]
+      return resource[:tcp_ephemeral_high]
+    end
+  end
+
+  def tcp_ephemeral_high=(value)
+    system('no -p -o tcp_ephemeral_high='"#{resource[:tcp_ephemeral_high]}")
+  end   
   
 
 	######################
@@ -180,7 +206,33 @@ Puppet::Type.type(:no).provide :aix do
 
   def udp_recvspace=(value)
     system('no -p -o udp_recvspace='"#{resource[:udp_recvspace]}")
-  end      
+  end
+  
+  ##
+	##	newproperty(:udp_ephemeral_low)
+	##
+	def udp_ephemeral_low
+    if getvalue("udp_ephemeral_low") == resource[:udp_ephemeral_low]
+      return resource[:udp_ephemeral_low]
+    end
+  end
+
+  def udp_ephemeral_low=(value)
+    system('no -p -o udp_ephemeral_low='"#{resource[:udp_ephemeral_low]}")
+  end  
+  
+	##
+	##	newproperty(:tcp_ephemeral_high)
+	##
+	def udp_ephemeral_high
+    if getvalue("udp_ephemeral_high") == resource[:udp_ephemeral_high]
+      return resource[:udp_ephemeral_high]
+    end
+  end
+
+  def udp_ephemeral_high=(value)
+    system('no -p -o udp_ephemeral_high='"#{resource[:udp_ephemeral_high]}")
+  end   
 
 
 	######################
@@ -302,6 +354,19 @@ Puppet::Type.type(:no).provide :aix do
   def nonlocsrcroute=(value)
     system('no -p -o nonlocsrcroute='"#{resource[:nonlocsrcroute]}")
   end 
+
+  #
+	##	newproperty(:ipqmaxlen)
+	##
+	def ipqmaxlen
+    if getvalue("ipqmaxlen") == resource[:ipqmaxlen]
+      return resource[:ipqmaxlen]
+    end
+  end
+
+  def ipqmaxlen=(value)
+    system('no -p -o ipqmaxlen='"#{resource[:ipqmaxlen]}")
+  end   
   
   
 	######################

@@ -86,6 +86,11 @@
 #    tcp_pmtu_discover    => your_tunable_value,
 #    udp_pmtu_discover    => your_tunable_value,
 #    use_isno             => your_tunable_value,
+#    ipqmaxlen            => your_tunable_value,
+#    tcp_ephemeral_low    => your_tunable_value,
+#    tcp_ephemeral_high   => your_tunable_value,
+#    udp_ephemeral_low    => your_tunable_value,
+#    udp_ephemeral_high   => your_tunabel_value,
 #  }
 #
 #  schedo { 'schedo_tunables':
@@ -149,6 +154,11 @@ class aix_kernel_tunables (
   $tcp_tcpsecure                  = aix_kernel_tunables::params::tcp_tcpsecure,
   $udp_sendspace                  = aix_kernel_tunables::params::udp_sendspace,
   $udp_recvspace                  = aix_kernel_tunables::params::udp_recvspace,
+  $ipqmaxlen                      = aix_kernel_tunables::params::ipqmaxlen,
+  $tcp_ephemeral_low              = aix_kernel_tunables::params::tcp_ephemeral_low,
+  $tcp_ephemeral_high             = aix_kernel_tunables::params::tcp_ephemeral_low,
+  $udp_ephemeral_low              = aix_kernel_tunables::params::udp_ephemeral_low,
+  $udp_ephemeral_high             = aix_kernel_tunables::params::udp_ephemeral_high,
   $directed_broadcast             = aix_kernel_tunables::params::directed_broadcast,
   $ip6srcrouteforward             = aix_kernel_tunables::params::ip6srcrouteforward,
   $ipforwarding                   = aix_kernel_tunables::params::ipforwarding,

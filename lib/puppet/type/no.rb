@@ -54,6 +54,14 @@ Puppet::Type.newtype(:no) do
 		desc "Specifies whether or not connection reset attacks and data corruption attacks on TCP are avoided."
 	end
 
+	newproperty(:tcp_ephemeral_low) do
+		desc "Specifies the smallest port number to allocate for TCP ephemeral ports."
+	end
+
+	newproperty(:tcp_ephemeral_high) do
+		desc "Specifies the largest port number to allocate for TCP ephemeral ports."
+	end
+
 
 	######################
 	## udp_network
@@ -64,6 +72,14 @@ Puppet::Type.newtype(:no) do
 
 	newproperty(:udp_recvspace) do
 		desc "Specifies the system default socket buffer size for receiving UDP data."
+	end
+
+	newproperty(:udp_ephemeral_low) do
+		desc "Specifies the smallest port number to allocate for UDP ephemeral ports."
+	end
+
+	newproperty(:udp_ephemeral_high) do
+		desc "Specifies the largest port number to allocate for UDP ephemeral ports."
 	end
 
 
@@ -104,6 +120,10 @@ Puppet::Type.newtype(:no) do
 
 	newproperty(:nonlocsrcroute) do
 		desc "Tells the Internet Protocol that strictly source-routed packets may be addressed to hosts outside the local network."
+	end
+
+	newproperty(:ipqmaxlen) do
+		desc "Specifies the number of received packets that can be queued on the IP protocol input queue."
 	end
 
 
