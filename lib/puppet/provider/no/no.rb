@@ -365,7 +365,7 @@ Puppet::Type.type(:no).provide :aix do
   end
 
   def ipqmaxlen=(value)
-    system('no -p -o ipqmaxlen='"#{resource[:ipqmaxlen]}")
+    system('no -r -o ipqmaxlen='"#{resource[:ipqmaxlen]}")
   end   
   
   
