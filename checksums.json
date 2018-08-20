@@ -1,0 +1,23 @@
+{
+  "LICENSE": "b44c6d1c0afbde8619a28264b435a973",
+  "README.markdown": "322f150987387d30450f1030db3227e2",
+  "Rakefile": "ec641f9abbcd37cbe618d5c3c7673314",
+  "lib/puppet/provider/asoo/asoo.rb": "9bdc82f67b3cb971bd190d6e2e04e6c9",
+  "lib/puppet/provider/ioo/ioo.rb": "6979f178485d32ddd21e6c12543ad679",
+  "lib/puppet/provider/nfso/nfso.rb": "06bbd00a81db1819acb5b32667b70ee9",
+  "lib/puppet/provider/no/no.rb": "e59b5324ed6f5b0ed0fcebcc884386ab",
+  "lib/puppet/provider/schedo/schedo.rb": "8610c2c8842656fe3cf9eb9b5ada0016",
+  "lib/puppet/provider/vmo/vmo.rb": "c73c2807927ab5d248742346f034962b",
+  "lib/puppet/type/asoo.rb": "05e223841644b20c179404db7d025561",
+  "lib/puppet/type/ioo.rb": "37161b49fe81ed7d8986d9475726b286",
+  "lib/puppet/type/nfso.rb": "1e5baae50a2f9e71f39b8181b3362d51",
+  "lib/puppet/type/no.rb": "08a83205c51e4abb6eb6dd657af3c338",
+  "lib/puppet/type/schedo.rb": "bd0e1e2fd7531de3bfd55a092159148f",
+  "lib/puppet/type/vmo.rb": "e8ac9968c0e528d3ee7dac17cf838c87",
+  "manifests/init.pp": "57dce6e9420fedd30d2cf9c122c794d3",
+  "manifests/params.pp": "88d877de7e9b9b81472323312e9df3d3",
+  "metadata.json": "e19e67fcac2e605e01f00f013528c76d",
+  "spec/spec.opts": "eb547b31184006017b3f6d6e2f1bbc12",
+  "spec/spec_helper.rb": "2553c1effba7428583143e8f908fac3a",
+  "tests/init.pp": "3c3cbf8bf1f10fdc03e6437ce4bddbdb"
+}

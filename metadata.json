@@ -1,0 +1,36 @@
+{
+  "name": "BashTheStampede-aix_kernel_tunables",
+  "version": "0.1.0",
+  "author": "BashTheStampede and rcarriker",
+  "summary": "Manage AIX kernel level settings",
+  "license": "MIT",
+  "source": "https://forge.puppetlabs.com/BashTheStampede-aix_kernel_tunables",
+  "project_page": "https://forge.puppetlabs.com/BashTheStampede-aix_kernel_tunables",
+  "issues_url": "",
+  "tags": [
+    "usersec",
+    "AIX",
+    "security"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "AIX"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.0.0"
+    }
+  ]
+}
